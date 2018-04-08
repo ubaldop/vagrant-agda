@@ -4,10 +4,10 @@
 This repository contains a Vagrant setup for an ArchLinux virtual machine containing Agda.
 It contains the following files:
 
-- Vagrantfile - it is the Vagrant VM setup
-- provision.sh - it is the shell script installing all the required packages
-- src - it is a local folder mounted as the Sync Folder for Vagrant. It contains a helloworld example written in Agda.
-- agda.md - it is the help of the agda command
+- `Vagrantfile` - it is the Vagrant VM setup
+- `provision.sh` - it is the shell script installing all the required packages
+- `src` - it is a local folder mounted as the Sync Folder for Vagrant. It contains a helloworld example written in Agda.
+- `agda.md` - it is the help of the agda command
 
 
 ### Commands to launch the virtual machine
