@@ -24,7 +24,7 @@ echo "Logging to the VM"
 vagrant ssh
 echo "Navigating to the folder containing the example"
 cd /vagrant
-echo "Compile the Hello World example"
+echo "Compiling the Hello World example"
 agda -i /usr/share/agda/lib/ -i . -c helloworld.agda
 echo "Launching the compiled application"
 ./helloworld
