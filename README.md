@@ -6,7 +6,7 @@ It contains the following files:
 
 - Vagrantfile - it is the Vagrant VM setup
 - provision.sh - it is the shell script installing all the required packages
-- src - it is a local folder mounted as the Sync Folder for Vagrant. It contains a helloworld example written in Agda.
+- src - it is a local folder mounted as the Vagrant Synced Folder. It contains a helloworld example written in Agda.
 - agda.md - it is the help of the agda command
 
 
@@ -25,7 +25,8 @@ vagrant ssh
 echo "Navigating to the folder containing the example"
 cd /vagrant
 echo "Compile the Hello World example"
-agda -i /usr/share/agda/lib/ -i . -c helloworld.agda
+stack exec agda --package ieee754 --package text
+stack exec -- agda -i /usr/share/agda/lib/ -i . -c helloworld.agda
 echo "Launching the compiled application"
 ./helloworld
 ```

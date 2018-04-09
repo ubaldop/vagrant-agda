@@ -6,11 +6,11 @@ pacman --noconfirm -Syyu
 pacman --noconfirm -Sy ansible vim nano unzip wget git make gcc clang dnsutils
 yes | pacman -Sy virtualbox-guest-utils
 pacman --noconfirm -Sy emacs
-pacman --noconfirm -Sy ghc-static ghc-libs ghc
-pacman --noconfirm -Sy cabal-install
+#pacman --noconfirm -Sy ghc-static ghc-libs ghc
+pacman --noconfirm -Sy stack
 
 #updating cabal
-cabal update
+stack update
 
 #Installing agda
 pacman --noconfirm -Sy agda
