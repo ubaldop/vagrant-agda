@@ -1,6 +1,5 @@
 # Agda VM with ArchLinux
 
----
 This repository contains a Vagrant setup for an ArchLinux virtual machine containing Agda.
 It contains the following files:
 
